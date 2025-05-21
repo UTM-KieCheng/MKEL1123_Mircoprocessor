@@ -24,7 +24,7 @@
 uint16_t u16Frequency 	= 200;
 uint8_t u8NumOfBlink	= 0;
 int8_t	s8Direction 	= 1;
-uint8_t u8MaxBlink		= 2;
+uint8_t u8MaxBlink	= 2;
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
