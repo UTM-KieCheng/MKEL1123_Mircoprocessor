@@ -21,10 +21,9 @@
 #include "stdbool.h"
 #include "stm32f4xx.h"
 
-bool bPressed 			= false;
 uint16_t u16Frequency 	= 200;
 uint8_t u8NumOfBlink	= 0;
-int8_t	s8direction 	= 1;
+int8_t	s8Direction 	= 1;
 uint8_t u8MaxBlink		= 2;
 
 /* Private includes ----------------------------------------------------------*/
@@ -125,19 +124,19 @@ int main(void)
 		  u8NumOfBlink = 0;
 
 		  // Change the blinking frequency based on current direction (increase or decrease)
-		  u16Frequency = u16Frequency + (100 * s8direction);
+		  u16Frequency = u16Frequency + (100 * s8Direction);
 
 		  // If frequency exceeds upper limit, reverse direction to start decreasing
 		  if (u16Frequency >= 800)
 		  {
 			  u16Frequency = 800;
-			  s8direction = -1;  // Set direction to decrease
+			  s8Direction = -1;  // Set direction to decrease
 		  }
 		  // If frequency goes below lower limit, reverse direction to start increasing
 		  else if (u16Frequency <= 200)
 		  {
 			  u16Frequency = 200;
-			  s8direction = 1;   // Set direction to increase
+			  s8Direction = 1;   // Set direction to increase
 		  }
 	  }
 
