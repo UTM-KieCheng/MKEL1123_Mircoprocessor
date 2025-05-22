@@ -54,4 +54,4 @@ if (u8NumOfBlink == u8MaxBlink)
 }  
 ```
 
-The demonstration video can be found here:   
+The demonstration video can be found here: https://youtu.be/8TwdNh-WTrI
